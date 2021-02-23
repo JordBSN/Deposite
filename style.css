@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("assets/fonts/Raleway/Raleway-VariableFont_wght.ttf"); format("ttf");
+}
+
+* {
+    font-family: "Raleway", serif;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+div.logo {
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+/* Main menu */
+nav.mainNav {
+    margin-left: 50em;
+}
+
+ul.nav li {
+    padding: 1em;
+    display: block;
+    text-align: center;
+}
+
+nav.mainNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Recherche */
+div.research {
+    margin-left: 55px;
+}
+
+form i {
+    background: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    font-size: 20px;
+    border-radius: 15px 0 0 15px;
+    padding: 7px 15px 11px;
+}
+
+input.searchField {
+    background: transparent;
+    border: 1px #F2F2F2 solid;
+    padding: 11px;
+    margin-left: -4px;
+    height: 20px;
+}
+
+input.buttonResearch {
+    background: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0 15px 15px 0;
+    color: #FFF;
+    height: 43px;
+    padding: 15px;
+}
+
+/* Filters */
+div.filters {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+div.filters h2 {
+    padding-top: 8px
+}
+
+div.allFilters {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 40px;
+}
+
+div.filter {
+    display: flex;
+    align-items: center;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    height: 50px;
+    position: relative;
+    padding-left: 55px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+div.filter:hover {
+    transform: scale(1.10);
+    box-shadow: #F2F2F2 3px 3px;
+}
+
+.iconFilter {
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;
+}
+
