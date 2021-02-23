@@ -8,6 +8,10 @@
     list-style-type: none;
 }
 
+body {
+    max-width: 1438px;
+}
+
 a {
     text-decoration: none;
 }
@@ -119,3 +123,25 @@ div.filter:hover {
     border-radius: 100%;
 }
 
+figure img{
+    width: 250px;
+    height:150px;
+}
+
+div.allHosting {
+   max-width: 1328px;
+    width: 80%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 1000px 300px;
+}
+#articleHostingContainer {
+    max-width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
+#articleHostingContainer h2{
+    grid-column-end: span 3;
+    max-height: 50px;
+}
