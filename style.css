@@ -23,7 +23,7 @@ header {
 }
 
 div.logo {
-    margin-left: 55px;
+    margin-left: 100px;
     margin-top: 15px;
 }
 
@@ -46,7 +46,7 @@ nav.mainNav ul {
 
 /* Recherche */
 div.research {
-    margin-left: 55px;
+    margin-left: 100px;
 }
 
 form i {
@@ -79,7 +79,7 @@ div.filters {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    margin-left: 55px;
+    margin-left: 100px;
 }
 
 div.filters h2 {
@@ -122,26 +122,74 @@ div.filter:hover {
     left: -2px;
     border-radius: 100%;
 }
-
-figure img{
-    width: 250px;
-    height:150px;
+div.allArticleHosting {
+    display:grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
+}
+/* Hébergement classique */
+img.hostingImg {
+    height:7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
 }
 
-div.allHosting {
-   max-width: 1328px;
-    width: 80%;
-    height:auto;
-    display: grid;
-    grid-template-columns: 1000px 300px;
+div.allArticleHosting{
+
+
 }
-#articleHostingContainer {
-    max-width: 1000px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+
+div.tittleHosting {
+    grid-column: 1/-1;
+    display: block;
 }
-#articleHostingContainer h2{
-    grid-column-end: span 3;
-    max-height: 50px;
+div.tittleHosting h2 {
+    margin: 0;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#articleHosting {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+/* Hébergement les plus populaires */
+img.popularHostingImg {
+    height: 9rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+#articlePopularHosting {
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+article.popularHosting {
+    display:block;
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    box-sizing: border-box;
+    height:100%;
 }
