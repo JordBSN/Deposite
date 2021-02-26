@@ -241,7 +241,6 @@ figure.popularHosting figcaption h3 {
 
 article.popularHostingCards p {
     padding-left: 11rem;
-    display: block;
     margin-block-start: -0.8em;
     margin-block-end: 1em;
 }
@@ -249,4 +248,106 @@ article.popularHostingCards p {
 article.popularHostingCards div.noteHosting {
     padding-left: 11rem;
     padding-top: 0.8rem;
+}
+
+/* Activitées */
+
+#articleActivities {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+#articleActivities h2 {
+    grid-column: 1/-1;
+}
+
+
+img.smallActivityImg {
+    width: 20rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: -1rem;
+    margin-left: -2.5rem;
+}
+
+img.activityImg {
+    width: 20rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: -1rem;
+    margin-left: -2.5rem;
+}
+
+img.greatActivityImg {
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: -1rem;
+    margin-left: -2.5rem;
+}
+
+.activityCards {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.activityCard1 {
+    grid-row: 2/7;
+    grid-column: 1/2;
+    height: 34rem;
+
+}
+
+.activityCard2 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+
+}
+
+.activityCard3 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.activityCard4 {
+    grid-column: 3/4;
+    grid-row: 2/7;
+    height: 34rem;
+}
+
+.activityCard5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.activityCard6 {
+    grid-column: 4/5;
+    grid-row: 4/7;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #F2F2F2 ;
+}
+
+nav.about {
+    margin-left : 2rem;
+ }
+
+nav.ourHosting {
+    margin-left: 5rem;
+}
+
+nav.assist {
+    margin-left: 5rem;
 }
