@@ -35,10 +35,12 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
         </header>
-        <form action="post">
+        <form>
             <i class="fas fa-map-marker-alt"></i>
-            <input class="searchField" type="text" placeholder="Marseille, France">
-            <input class="buttonResearch" type="submit" value="Rechercher">
+            <label>
+                <input class="searchField" type="text" placeholder="Marseille, France">
+            </label>
+            <button>Recherche</button>
         </form>
     </div>
 
@@ -63,6 +65,12 @@
                 <span class="nameFilter">Animaux autorisés</span>
             </div>
         </div>
+    </div>
+
+    <!-- Infos nombre d'hébergement -->
+    <div class="infoHosting">
+        <i class="fas fa-info searchResultWrapiconIcon" aria-hidden="true"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
     <!-- Hébergements -->
@@ -105,7 +113,7 @@
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                     </div>
                 </a>
             </article>
@@ -142,7 +150,7 @@
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
                     </div>
                 </a>
@@ -181,7 +189,7 @@
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                     </div>
                 </a>
             </article>
@@ -211,7 +219,7 @@
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
-                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
                     </div>
                 </a>
             </article>
@@ -304,7 +312,7 @@
         <article class="activityCards  activityCard5">
             <a href="#">
                 <figure>
-                    <img class="activityImg"
+                    <img class="smallActivityImg"
                          src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                          alt="Notre-Dame-de-la-Garde">
                     <figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
@@ -314,7 +322,7 @@
         <article class="activityCards  activityCard6">
             <a href="#">
                 <figure>
-                    <img class="smallActivityImg"
+                    <img class="activityImg"
                          src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                          alt="Parc Longchamp">
                     <figcaption><h3>Parc Longchamp</h3></figcaption>
@@ -326,23 +334,23 @@
 
 <!--  footer  !-->
 <footer>
-    <nav class="about">
-        <h2>À propos</h2>
+    <nav class="about navFooter">
+        <h2 class="tittleNavFooter" >À propos</h2>
         <ul>
             <li>Fonctionnement du site</li>
             <li>Conditions générales de vente</li>
             <li>Données et confidentialité</li>
         </ul>
     </nav>
-    <nav class="ourHosting">
-        <h2>Nos hébergements</h2>
+    <nav class="ourHosting navFooter">
+        <h2 class="tittleNavFooter">Nos hébergements</h2>
         <ul>
             <li>Charte qualité</li>
             <li>Soumettre votre hôtel</li>
         </ul>
     </nav>
-    <nav class="assist">
-        <h2>Assistance</h2>
+    <nav class="assist navFooter">
+        <h2 class="tittleNavFooter">Assistance</h2>
         <ul>
             <li>Centre d'aide</li>
             <li>Nous contacter</li>
