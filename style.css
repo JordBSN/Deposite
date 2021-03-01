@@ -581,6 +581,27 @@ h2.tittleNavFooter {
 
 /* Responsive smartphones */
 @media all and (max-width: 960px) and (min-width: 480px) {
-    
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    div.logo {
+        order: 0;
+        margin-left: 1rem;
+    }
+    nav.mainNav {
+        order: 2;
+        margin-left: 4.3rem;
+    }
+    .register {
+        flex-basis: 50%;
+        margin-left: 23rem;
+        margin-top: -4rem;
+    }
+    main {
+        margin: 1rem;
+    }
 }
 
