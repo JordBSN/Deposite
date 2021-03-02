@@ -755,6 +755,13 @@ h2.tittleNavFooter {
     #articleHosting {
         max-width: 605px;
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tittleHosting {
+        flex-basis: 100%;
     }
 
     /* hébergements les plus populaires */
