@@ -43,6 +43,7 @@ main {
 div.logo {
     margin-top: 15px;
     margin-left: 5.8rem;
+    grid-area: logo;
 }
 
 
@@ -59,18 +60,18 @@ nav.mainNav a {
     text-align: center;
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
-    border-bottom: 3px transparent solid
+    border-bottom: 3px transparent solid;
+    grid-area: mainNav
 }
 
-a.register {
+#register {
     display: flex;
     align-items: center;
-    grid-area: button;
     padding: 2rem;
     color: #0065FC;
     font-weight: 600;
+    grid-area: register;
 }
-
 
 /* Recherche */
 
@@ -441,6 +442,143 @@ h2.tittleNavFooter {
     font-size: 0.8rem;
 }
 
+/* responsive transition tablette */
+@media all and (max-width: 1400px) and (min-width: 1279px) {
+    main {
+        margin-left: 1rem;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .logo img {
+        margin-left: -5rem;
+    }
+
+    /* Main menu */
+    nav.mainNav {
+        display: flex;
+        margin-left: 40em;
+    }
+
+    /* Tous les  hébergements */
+    div.allArticleHosting {
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    /* hébergements classique */
+    #articleHosting {
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    /* hébergements les plus populaires */
+    #articlePopularHosting {
+        max-width: 1280px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        order: -1;
+        margin-bottom: 2rem;
+
+    }
+
+    article.popularHostingCards {
+        padding: 0.375rem;
+        box-sizing: border-box;
+        width: 16rem;
+        height: 15rem;
+        margin-right: 2rem;
+    }
+
+    div.tittlePopularHosting {
+        flex-basis: 100%;
+    }
+
+    div.tittlePopularHosting h2 {
+        font-size: 1.4em;
+        font-weight: bolder;
+    }
+
+    div.popularHostingImg img {
+        height: 7rem;
+        width: 15rem;
+        position: relative;
+        border-radius: 1rem 1rem 0 0;
+        margin-left: -2.4rem;
+        margin-top: -1rem;
+    }
+
+    figure.popularHosting figcaption h3 {
+        font-size: 1.1rem;
+        margin-left: -11rem;
+        margin-top: 0.2rem;
+    }
+
+    article.popularHostingCards p {
+        font-size: 1.1rem;
+        margin-left: -11rem;;
+        margin-top: 0.9rem;
+    }
+
+    article.popularHostingCards .noteHosting {
+        margin-left: -11rem;;
+        margin-top: -1rem;
+    }
+
+    /* Activités */
+    #articleActivities {
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+    }
+
+    #articleActivities h2 {
+        flex-basis: 100%;
+    }
+
+    img.smallActivityImg {
+        width: 15rem;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: -1rem;
+        margin-left: -2.5rem;
+    }
+
+    img.activityImg {
+        width: 15rem;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: -1rem;
+        margin-left: -2.5rem;
+    }
+
+    img.greatActivityImg {
+        width: 15rem;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: -1rem;
+        margin-left: -2.5rem;
+    }
+
+    .activityCards {
+        margin-bottom: 2rem;
+        max-width: 15rem;
+        max-height: 16rem;
+    }
+}
+
 /* Responsive tablette */
 @media all and (max-width: 1280px) and (min-width: 960px) {
 
@@ -579,29 +717,167 @@ h2.tittleNavFooter {
     }
 }
 
-/* Responsive smartphones */
-@media all and (max-width: 960px) and (min-width: 480px) {
+
+/* responsive design transition smartphone */
+@media all and (max-width: 960px) and (min-width: 604px) {
+    main {
+        margin-left: 1rem;
+    }
 
     header {
+        display: flex;
+    }
+
+    .logo img {
+        margin-left: -5rem;
+    }
+
+    /* Main menu */
+    nav.mainNav {
+        display: flex;
+        margin-left: 3em;
+    }
+
+
+}
+
+/* Responsive smartphones */
+@media screen and (max-width: 604px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "logo . register"
+            "mainNav mainNav mainNav";
+        position: relative;
+    }
+
+    .logo img {
+        margin-left: -4rem;
+    }
+
+    #register {
+        margin-left: -23rem;
+        margin-top: -5rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    nav.mainNav {
+        max-width: 604px;
+        width: 100%;
+        margin: 4rem 0 0 -12rem;
+    }
+
+    nav.mainNav a {
+        margin-right: -2rem;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        width: 50%;
+        border-bottom: 3px #F2F2F2 solid;
+        padding-right: -1rem;
+    }
+
+    nav.mainNav a[data-active=true] {
+        color: #0065FC;
+        border-bottom: 3px #0065FC solid;
+    }
+
+    /* main container */
+    main {
+        max-width: 604px;
+        margin: 1rem;
+    }
+
+    /* Filtres */
+    .allFilters {
         display: flex;
         flex-flow: row wrap;
     }
 
-    div.logo {
-        order: 0;
-        margin-left: 1rem;
+    /* Hébergement les plus populaires */
+    div.allArticleHosting {
+        max-width: 604px;
+        width: 100%;
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: 1fr;
     }
-    nav.mainNav {
-        order: 2;
-        margin-left: 4.3rem;
+
+    #articlePopularHosting {
+        display: flex;
+        order: -1;
+        margin-left: -1rem;
+        padding-right: 100%;
+        border-radius: 0;
     }
-    .register {
-        flex-basis: 50%;
-        margin-left: 23rem;
-        margin-top: -4rem;
+
+    .articlePopularHosting {
+        padding-left: -5rem;
     }
-    main {
-        margin: 1rem;
+
+    /* Hébergement classique */
+    #articleHosting {
+        grid-template-columns: 1fr;
+        background-color: white;
+        margin-bottom: 50rem;
     }
+
+    article.hostingCards {
+        background-color: white;
+        padding: 0.375rem;
+        width: 25rem;
+        height: 13rem;
+    }
+
+
+    div.tittleHosting h2 {
+        font-size: 1.4em;
+        font-weight: bolder;
+    }
+
+    div.hostingImg img {
+        height: 7rem;
+        width: 25rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: -1.35rem;
+        margin-left: -2.85rem;
+    }
+
+    /* activités */
+    #articleActivities {
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    img.smallActivityImg {
+        width: 25rem;
+        height: 12rem;
+
+    }
+
+    img.activityImg {
+        width: 25rem;
+        height: 12rem;
+    }
+
+    img.greatActivityImg {
+        width: 25rem;
+        height: 12rem;
+
+    }
+
+    .activityCards {
+        max-width: 25rem;
+        width: 25rem;
+        max-height: 16rem;
+        margin-bottom: 2rem;
+    }
+
 }
+
+
+
 
