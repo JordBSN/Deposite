@@ -762,9 +762,9 @@ h2.tittleNavFooter {
 
     /* Tous les  hébergements */
     div.allArticleHosting {
-        display: grid;
-        column-gap: 2rem;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
     }
 
     .allFilters {
@@ -792,7 +792,7 @@ h2.tittleNavFooter {
 
     /* hébergements les plus populaires */
     #articlePopularHosting {
-        max-width: 9605px;
+        max-width: 605px;
         width: 100%;
         height: auto;
         display: flex;
