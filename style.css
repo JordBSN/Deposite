@@ -35,6 +35,7 @@ a {
 header {
     display: flex;
     flex-direction: row;
+    margin-top: -1.3rem;
 }
 
 
@@ -50,7 +51,7 @@ div.logo {
 nav.mainNav {
     display: flex;
     align-items: center;
-    margin-left: 50rem;
+    margin-left: 58rem;
 }
 
 nav.mainNav a {
