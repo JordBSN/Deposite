@@ -1017,6 +1017,10 @@ h2.tittleNavFooter {
         margin-left: -2rem;
     }
 
+    figure.popularHosting figcaption h3 {
+     font-size:1rem;
+    }
+
     article.popularHostingCards div.noteHosting {
         margin-top: 1rem;
     }
