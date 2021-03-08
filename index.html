@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Réservia</title>
     <script src="https://kit.fontawesome.com/583c809477.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -12,15 +13,14 @@
 <!-- header  -->
 <!-- ============================ -->
 <header>
-    <div class="logo">
+    <section class="logo">
         <img src="assets/images/logo/Reservia.svg" alt="logoReservia">
-    </div>
+    </section>
 
     <!-- ============================ -->
     <!--  navigation  -->
     <!-- ============================ -->
     <nav class="mainNav">
-
         <a href="#articleHosting" data-active="true">Hébergements</a>
         <a href="#articleActivities" data-active="false">Activités</a>
     </nav>
@@ -33,11 +33,11 @@
 <main id="main">
 
     <!--  recherche  !-->
-    <div class="research">
-            <div class="title">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+    <section class="research">
+        <div class="title">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
         <form>
             <i class="fas fa-map-marker-alt"></i>
             <label>
@@ -45,12 +45,12 @@
             </label>
             <button>Recherche</button>
         </form>
-    </div>
+    </section>
 
     <!-- ============================ -->
     <!-- Filtres  -->
     <!-- ============================ -->
-    <div class="filters">
+    <section class="filters">
         <h2>Filtres</h2>
         <div class="allFilters">
             <div class="filter">
@@ -70,20 +70,20 @@
                 <span class="nameFilter">Animaux autorisés</span>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- ============================ -->
     <!-- Infos nombres d'hébergements -->
     <!-- ============================ -->
-    <div class="infoHosting">
+    <section class="infoHosting">
         <i class="fas fa-info searchResultWrapiconIcon" aria-hidden="true"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
+    </section>
 
     <!-- ============================ -->
     <!-- Hébergements -->
     <!-- ============================ -->
-    <div class="allArticleHosting">
+    <section class="allArticleHosting">
         <div id="articleHosting">
             <div class="tittleHosting">
                 <h2>Hébergements à Marseille</h2>
@@ -273,12 +273,12 @@
                 </a>
             </article>
         </div>
-    </div>
+    </section>
 
     <!-- ============================ -->
     <!-- Activités -->
     <!-- ============================ -->
-    <div id="articleActivities">
+    <section id="articleActivities">
         <h2>Activités à Marseille</h2>
         <article class="activityCards  activityCard1">
             <a href="#">
@@ -340,7 +340,7 @@
                 </figure>
             </a>
         </article>
-    </div>
+    </section>
 </main>
 
 <!-- ============================ -->
