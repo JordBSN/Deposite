@@ -19,13 +19,6 @@ a {
     color: black;
 }
 
-.hostingMainCardGradeIcon[data-active=false] {
-    color: #d9d9d9;
-}
-
-.hostingMainCardGradeIcon[data-active=true] {
-    color: #0065FC;
-}
 
 /* ==================== */
 /* ==================== */
@@ -202,6 +195,14 @@ div.filter:hover {
 section.allArticleHosting {
     display: flex;
     flex-direction: row;
+}
+
+.hostingMainCardGradeIcon[data-active=false] {
+    color: #d9d9d9;
+}
+
+.hostingMainCardGradeIcon[data-active=true] {
+    color: #0065FC;
 }
 
 /* ==================== */
@@ -1085,7 +1086,6 @@ h2.tittleNavFooter {
 
 
     /* ----- footer ----- */
-
     nav.navFooter {
         display: flex;
         flex-direction: column;
