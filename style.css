@@ -100,7 +100,7 @@ form {
 
 form i {
     background: #F2F2F2;
-    border: 1px #DEEBFF solid;
+    border: 1px #F2F2F2 solid;
     font-size: 20px;
     border-radius: 15px 0 0 15px;
     padding: 7px 15px 11px;
@@ -720,7 +720,7 @@ h2.tittleNavFooter {
 
     /* ----- Activités ----- */
     #articleActivities {
-        max-width:960px;
+        max-width: 960px;
         width: 100%;
         height: auto;
         display: flex;
@@ -996,20 +996,34 @@ h2.tittleNavFooter {
 
     .searchFormSubmitinputIcon {
         display: block;
+        width: 0.9rem;
         background: #0065FC;
-        border: 1px solid;
-        border-radius: 0 1rem 1rem 0;
+        border: 1px #0065FC solid;
+        border-radius: 0.7rem;
         color: #FFF;
         padding-top: 0.55rem;
+        padding-left: 0.6rem;
+        margin-left: -0.4rem;
     }
 
     /* ----- Filtres ------ */
+    section.filters {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    section.filters h2 {
+        margin-bottom: -0.5rem;
+    }
+
     .allFilters {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
+        margin-left: -2.5rem;
     }
 
     .searchResultWrapiconIcon {
+        display: flex;
         width: 3rem;
     }
 
@@ -1088,14 +1102,15 @@ h2.tittleNavFooter {
     }
 
     figure.hosting figcaption h3 {
-        font-size:1rem;
+        font-size: 1rem;
     }
 
     article.hostingCards p {
-        font-size:1rem;
+        font-size: 1rem;
         margin-top: 0.3rem;
         margin-bottom: 1rem;
     }
+
     div.hostingImg img {
         height: 7rem;
         width: 21rem;
