@@ -7,9 +7,6 @@
     font-family: "Raleway", serif;
     list-style-type: none;
 }
-html{
-    font-size:100%;
-}
 
 body {
     display: flex;
@@ -22,6 +19,13 @@ a {
     color: black;
 }
 
+.hostingMainCardGradeIcon[data-active=false] {
+    color: #d9d9d9;
+}
+
+.hostingMainCardGradeIcon[data-active=true] {
+    color: #0065FC;
+}
 
 /* ==================== */
 /* ==================== */
@@ -42,7 +46,7 @@ div.logo {
 }
 
 /* ==================== */
-/* Main nav */
+/* Main menu */
 /* ==================== */
 nav.mainNav {
     display: flex;
@@ -75,6 +79,7 @@ nav.mainNav a[data-active=true] {
 /* Main container */
 /* ==================== */
 /* ==================== */
+
 main {
     max-width: 1440px;
     height: auto;
@@ -200,14 +205,6 @@ div.filter:hover {
 section.allArticleHosting {
     display: flex;
     flex-direction: row;
-}
-
-.hostingMainCardGradeIcon[data-active=false] {
-    color: #d9d9d9;
-}
-
-.hostingMainCardGradeIcon[data-active=true] {
-    color: #0065FC;
 }
 
 /* ==================== */
@@ -349,11 +346,8 @@ article.popularHostingCards div.noteHosting {
 /* ==================== */
 #articleActivities {
     display: grid;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
     margin: 3rem 0;
-    max-width: 1440px;
-    width:85%;
-
 }
 
 #articleActivities h2 {
@@ -481,7 +475,7 @@ h2.tittleNavFooter {
 /* ================================== */
 /* responsive transition tablette */
 /* ================================== */
-@media all and (max-width: 1480px) and (min-width: 1280px) {
+@media all and (max-width: 1400px) and (min-width: 1279px) {
     main {
         margin-left: 1rem;
     }
@@ -624,7 +618,7 @@ h2.tittleNavFooter {
 /* ================================== */
 /* Responsive tablette */
 /* ================================== */
-@media all and (max-width: 1279px) and (min-width: 960px) {
+@media all and (max-width: 1280px) and (min-width: 960px) {
 
     main {
         margin-left: 1rem;
@@ -635,7 +629,7 @@ h2.tittleNavFooter {
     }
 
     .logo img {
-        margin-left: -13rem;
+        margin-left: -4rem;
     }
 
     /* ------ Main menu ------ */
@@ -646,7 +640,7 @@ h2.tittleNavFooter {
 
     /* ----- Tous les  hébergements ------ */
     section.allArticleHosting {
-        max-width: 1280px;
+        max-width: 960px;
         width: 100%;
         display: flex;
         flex-flow: column wrap;
@@ -654,6 +648,7 @@ h2.tittleNavFooter {
 
     /* ----- hébergements classique ------- */
     #articleHosting {
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -725,10 +720,13 @@ h2.tittleNavFooter {
 
     /* ----- Activités ----- */
     #articleActivities {
+        max-width:960px;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin-left: 6rem;
+        margin-left: 3rem;
 
     }
 
@@ -737,25 +735,25 @@ h2.tittleNavFooter {
     }
 
     img.smallActivityImg {
-        width: 18rem;
+        width: 16rem;
         height: 12rem;
 
     }
 
     img.activityImg {
-        width: 18rem;
+        width: 16rem;
         height: 12rem;
     }
 
     img.greatActivityImg {
-        width: 18rem;
+        width: 16rem;
         height: 12rem;
 
     }
 
     article.activityCards {
-        max-width: 18rem;
-        width: 25rem;
+        max-width: 16rem;
+        width: 16rem;
         max-height: 16rem;
         margin-bottom: 2rem;
         margin-right: 2rem;
@@ -781,7 +779,7 @@ h2.tittleNavFooter {
     /* ------  Main menu ----- */
     nav.mainNav {
         display: flex;
-        margin-left: 8em;
+        margin-left: 3em;
     }
 
     /* ------ Tous les  hébergements ------ */
@@ -917,13 +915,25 @@ h2.tittleNavFooter {
         max-height: 16rem;
     }
 
+    /* ----- Footer ----- */
+    nav.about {
+        margin-left: 0.8rem;
+    }
+
+    nav.ourHosting {
+        margin-left: 3rem;
+    }
+
+    nav.assist {
+        margin-left: 5rem;
+    }
+
 }
 
 /* ================================== */
 /*  Responsive smartphones */
 /* ================================== */
 @media screen and (max-width: 604px) {
-
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -963,12 +973,13 @@ h2.tittleNavFooter {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px #0065FC solid;
+        margin-left: -1rem;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 5rem;
     }
 
     nav.mainNav a[data-active=false] {
-        padding-left: 6rem;
+        padding-left: 4em;
         padding-right: 40%;
     }
 
@@ -989,6 +1000,7 @@ h2.tittleNavFooter {
         border: 1px solid;
         border-radius: 0 1rem 1rem 0;
         color: #FFF;
+        padding-top: 0.55rem;
     }
 
     /* ----- Filtres ------ */
@@ -997,6 +1009,11 @@ h2.tittleNavFooter {
         flex-flow: row wrap;
     }
 
+    .searchResultWrapiconIcon {
+        width: 3rem;
+    }
+
+    /* ----- all hébergements ------ */
     section.allArticleHosting {
         display: flex;
         flex-flow: column wrap;
@@ -1031,7 +1048,7 @@ h2.tittleNavFooter {
     }
 
     article.popularHostingCards p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 2rem;
     }
 
@@ -1044,14 +1061,6 @@ h2.tittleNavFooter {
         object-fit: cover;
         margin-top: -0.68rem;
         margin-left: -2.1rem;
-    }
-
-    figure.popularHosting figcaption h3 {
-        font-size: 1rem;
-    }
-
-    article.popularHostingCards div.noteHosting {
-
     }
 
     /* ------ Hébergement classique ------ */
