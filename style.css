@@ -13,6 +13,9 @@ body {
     flex-direction: column;
 
 }
+html {
+    font-size: 100%;
+}
 
 a {
     text-decoration: none;
