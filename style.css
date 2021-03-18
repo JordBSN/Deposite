@@ -447,10 +447,11 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     background-color: #F2F2F2;
-    margin: auto;
 }
 
-
+nav.about {
+    margin-left:8%;
+}
 nav.ourHosting {
     margin-left: 8rem;
 }
