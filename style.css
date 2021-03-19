@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 
 }
 
@@ -41,7 +42,7 @@ header {
 
 div.logo {
     padding-top: 2rem;
-    margin-left: -3rem;
+    margin-left: -1rem;
     grid-area: logo;
 }
 
@@ -51,7 +52,7 @@ div.logo {
 nav.mainNav {
     display: flex;
     align-items: center;
-    margin-left: 58rem;
+    margin-left: 59rem;
 }
 
 nav.mainNav a {
@@ -61,17 +62,25 @@ nav.mainNav a {
     grid-area: mainNav;
 }
 
-nav.mainNav a[data-active=true] {
+nav.mainNav a:hover {
     border-top: 3px #0065FC solid;
 }
 
 #register {
+    max-height: 55px;
+    height: 100%;
     display: flex;
     align-items: center;
+    margin-top: 1rem;
     padding-top: 2rem;
+
     color: #0065FC;
     font-weight: bolder;
     grid-area: register;
+}
+
+#register:hover {
+    border-top: 3px #0065FC solid;
 }
 
 /* ==================== */
@@ -99,7 +108,7 @@ form {
 }
 
 form i {
-    background: #F2F2F2;
+    background: #f0ebeb;
     border: 1px #F2F2F2 solid;
     font-size: 20px;
     border-radius: 15px 0 0 15px;
@@ -115,7 +124,7 @@ input.searchField {
 
 button {
     background: #0065FC;
-    border: 1px solid;
+    border: 1px #0061f2 solid;
     border-radius: 0 1rem 1rem 0;
     color: #FFF;
     height: 2.5rem;
@@ -443,15 +452,15 @@ article.activityCard6 {
 /* ==================== */
 /* ==================== */
 footer {
-    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     background-color: #F2F2F2;
 }
 
 nav.about {
-    margin-left:8%;
+    margin-left: 8%;
 }
+
 nav.ourHosting {
     margin-left: 8rem;
 }
@@ -774,7 +783,7 @@ h2.tittleNavFooter {
     }
 
     .logo img {
-        margin-left: -5rem;
+        margin-left: -7rem;
     }
 
     /* ------  Main menu ----- */
@@ -944,13 +953,13 @@ h2.tittleNavFooter {
     }
 
     .logo img {
-        margin-left: 3rem;
         margin-top: -1rem;
+        margin-left: 1rem;
     }
 
     #register {
-        margin-left: -4rem;
-        margin-top: -5rem;
+        margin-left: -5rem;
+        margin-top: -1.5rem;
         font-size: 1.2rem;
         font-weight: bolder;
     }
@@ -958,7 +967,7 @@ h2.tittleNavFooter {
     nav.mainNav {
         max-width: 604px;
         width: 100%;
-        margin: 4rem 0 0 -7rem;
+        margin: 4rem 0 0 -6.5rem;
     }
 
     nav.mainNav a {
@@ -974,7 +983,7 @@ h2.tittleNavFooter {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px #0065FC solid;
-        margin-left: -1rem;
+        margin-left: -2rem;
         padding-left: 2rem;
         padding-right: 5rem;
     }
@@ -987,10 +996,19 @@ h2.tittleNavFooter {
     /* ----- main ----- */
     main {
         max-width: 604px;
-        margin: 1rem;
+        margin: auto;
     }
 
     /* ----- Research ----- */
+
+    .research{
+        margin-left: 1rem;
+    }
+    .title h2 {
+        width: 22rem;
+        overflow-wrap: break-word;
+    }
+
     button {
         display: none;
     }
@@ -999,7 +1017,7 @@ h2.tittleNavFooter {
         display: block;
         width: 0.9rem;
         background: #0065FC;
-        border: 1px #0065FC solid;
+        border: 1px #0061f2 solid;
         border-radius: 0.7rem;
         color: #FFF;
         padding-top: 0.55rem;
@@ -1011,21 +1029,32 @@ h2.tittleNavFooter {
     section.filters {
         display: flex;
         flex-flow: column wrap;
+        margin-top: 1rem;
     }
 
     section.filters h2 {
         margin-bottom: -0.5rem;
+        margin-left: 1rem;
     }
 
     .allFilters {
         display: flex;
         flex-flow: column wrap;
-        margin-left: -2.5rem;
     }
+
 
     .searchResultWrapiconIcon {
         display: flex;
-        width: 3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.2rem;
+        margin-right: 0.4rem;
+    }
+
+    div.infoHosting p {
+        width: 21rem;
+        font-size: 0.9rem;
+        overflow-wrap: break-word;
     }
 
     /* ----- all hébergements ------ */
@@ -1034,7 +1063,6 @@ h2.tittleNavFooter {
         flex-flow: column wrap;
         max-width: 604px;
         width: 100%;
-        margin-left: -0.5rem;
     }
 
     /* ----- Hébergement les plus populaires ------ */
@@ -1042,22 +1070,19 @@ h2.tittleNavFooter {
         width: auto;
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         order: -1;
         border-radius: 0;
         padding-left: 0;
-        margin-left: -1rem;
+        padding-right: 3rem;
     }
 
     article.popularHostingCards {
+        display: flex;
+        justify-content: center;
         max-width: 21rem;
         width: 100%;
-        margin-left: 1rem;
     }
-
-    div.tittlePopularHosting h2 {
-        margin-left: 0.8rem;
-    }
-
     figure.popularHosting figcaption h3 {
         font-size: 0.9rem;
     }
@@ -1085,7 +1110,7 @@ h2.tittleNavFooter {
         flex-flow: row wrap;
         background-color: white;
         margin-bottom: 50rem;
-        margin-left: -2rem;
+        margin-left: -1rem;
     }
 
     article.hostingCards {
@@ -1099,7 +1124,6 @@ h2.tittleNavFooter {
     div.tittleHosting h2 {
         font-size: 1.4em;
         font-weight: bolder;
-        margin-left: 0.8rem;
     }
 
     figure.hosting figcaption h3 {
@@ -1125,6 +1149,7 @@ h2.tittleNavFooter {
     #articleActivities {
         display: flex;
         flex-flow: column wrap;
+        margin-left: 1rem;
 
     }
 
