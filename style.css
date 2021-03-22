@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Raleway";
-    src: url("assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     font-family: "Raleway", serif;
@@ -12,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-
 }
 
 a {
@@ -277,7 +273,6 @@ figure.hosting figcaption h3 {
 article.hostingCards p {
     margin-top: -0.9rem;
     margin-left: 0.35rem;
-    font-weight: bolder;
 }
 
 article.hostingCards .noteHosting {
@@ -771,7 +766,7 @@ h2.tittleNavFooter {
 }
 
 /* ================================== */
-/* responsive transition smartphone */
+/* responsive transition smartphone 1 */
 /* ================================== */
 @media all and (max-width: 960px) and (min-width: 604px) {
     main {
@@ -943,7 +938,7 @@ h2.tittleNavFooter {
 /* ================================== */
 /*  Responsive smartphones */
 /* ================================== */
-@media screen and (max-width: 604px) {
+@media screen and (max-width: 414px) {
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -993,17 +988,12 @@ h2.tittleNavFooter {
         padding-right: 40%;
     }
 
-    /* ----- main ----- */
-    main {
-        max-width: 604px;
-        margin: auto;
-    }
 
     /* ----- Research ----- */
-
-    .research{
+    .research {
         margin-left: 1rem;
     }
+
     .title h2 {
         width: 22rem;
         overflow-wrap: break-word;
@@ -1061,20 +1051,18 @@ h2.tittleNavFooter {
     section.allArticleHosting {
         display: flex;
         flex-flow: column wrap;
-        max-width: 604px;
-        width: 100%;
     }
 
     /* ----- Hébergement les plus populaires ------ */
     #articlePopularHosting {
-        width: auto;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         order: -1;
         border-radius: 0;
-        padding-left: 0;
-        padding-right: 3rem;
+        padding-right: 0;
+        padding-left: 0.1rem;
     }
 
     article.popularHostingCards {
@@ -1082,7 +1070,9 @@ h2.tittleNavFooter {
         justify-content: center;
         max-width: 21rem;
         width: 100%;
+
     }
+
     figure.popularHosting figcaption h3 {
         font-size: 0.9rem;
     }
@@ -1110,7 +1100,8 @@ h2.tittleNavFooter {
         flex-flow: row wrap;
         background-color: white;
         margin-bottom: 50rem;
-        margin-left: -1rem;
+        padding-right: 0;
+        padding-left: 2.5rem;
     }
 
     article.hostingCards {
@@ -1149,7 +1140,8 @@ h2.tittleNavFooter {
     #articleActivities {
         display: flex;
         flex-flow: column wrap;
-        margin-left: 1rem;
+        padding-right: 0;
+        padding-left: 2.5rem;
 
     }
 
@@ -1176,7 +1168,6 @@ h2.tittleNavFooter {
         max-height: 13rem;
         margin-bottom: 2rem;
     }
-
 
     /* ----- footer ----- */
     nav.navFooter {
@@ -1211,6 +1202,13 @@ h2.tittleNavFooter {
         margin-bottom: 0.8rem;
         font-size: 1rem;
     }
+}
+
+/* ================================== */
+/* responsive transition smartphone 2 */
+/* ================================== */
+@media screen and (max-width: 375px) {
+
 }
 
 
