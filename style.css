@@ -938,7 +938,7 @@ h2.tittleNavFooter {
 /* ================================== */
 /*  Responsive smartphones */
 /* ================================== */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 604px) {
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -1208,7 +1208,24 @@ h2.tittleNavFooter {
 /* responsive transition smartphone 2 */
 /* ================================== */
 @media screen and (max-width: 375px) {
+    /* ----- hébergement classique ----- */
+    #articlePopularHosting {
 
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: -0.4rem;
+    }
+
+    /* ------ Hébergement classique ------ */
+    #articleHosting {
+     margin-left: -1.5rem;
+    }
+    /* ----- activités ----- */
+    #articleActivities {
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: -1.2rem;
+    }
 }
 
 
