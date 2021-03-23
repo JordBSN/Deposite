@@ -5,9 +5,6 @@
     list-style-type: none;
 }
 
-html {
-    font-size: 100%;
-}
 
 body {
     display: flex;
@@ -694,7 +691,7 @@ h2.tittleNavFooter {
         box-sizing: border-box;
         width: 16rem;
         height: 15rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
         margin-left: 1.5rem;
     }
 
@@ -840,7 +837,8 @@ h2.tittleNavFooter {
         order: -1;
         border-radius: 0;
         margin-bottom: 2rem;
-        margin-left: -2.5rem;
+        padding-right: 4rem;
+        margin-left: -1rem;
 
 
     }
@@ -937,6 +935,7 @@ h2.tittleNavFooter {
     }
 
     /* ----- Footer ----- */
+
     nav.about {
         margin-left: 0.8rem;
     }
@@ -954,7 +953,7 @@ h2.tittleNavFooter {
 /* ================================== */
 /*  Responsive smartphones */
 /* ================================== */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 604px) {
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -1225,7 +1224,9 @@ h2.tittleNavFooter {
 /* ================================== */
 @media screen and (max-width: 375px) {
 
-
+    #articlePopularHosting{
+        padding-right: 1rem;
+    }
     .popularHostingCards {
         margin-left: -0.5rem;
     }
