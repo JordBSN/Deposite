@@ -5,7 +5,6 @@
     list-style-type: none;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -662,8 +661,8 @@ h2.tittleNavFooter {
     }
 
     .hostingCards {
-    margin-left: 0.5rem;
-     }
+        margin-left: 0.5rem;
+    }
 
     div.tittleHosting {
         flex-basis: 100%;
@@ -805,6 +804,7 @@ h2.tittleNavFooter {
     .allFilters {
         display: flex;
         flex-flow: row wrap;
+        padding-right: 0;
     }
 
     /* ----- hébergements classique -----  */
@@ -837,7 +837,7 @@ h2.tittleNavFooter {
         order: -1;
         border-radius: 0;
         margin-bottom: 2rem;
-        padding-right: 4rem;
+        padding-right: 0;
         margin-left: -1rem;
 
 
@@ -935,7 +935,6 @@ h2.tittleNavFooter {
     }
 
     /* ----- Footer ----- */
-
     nav.about {
         margin-left: 0.8rem;
     }
@@ -968,7 +967,7 @@ h2.tittleNavFooter {
     }
 
     #register {
-        margin-left: -6rem;
+        margin-left: -8rem;
         margin-top: -1.5rem;
         font-size: 1.2rem;
         font-weight: bolder;
@@ -993,14 +992,14 @@ h2.tittleNavFooter {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px #0065FC solid;
-        margin-left: -1rem;
+        margin-left: -2.2rem;
         padding-left: 2rem;
-        padding-right: 5rem;
+        padding-right: 4rem;
     }
 
     nav.mainNav a[data-active=false] {
-        padding-left: 4em;
-        padding-right: 2rem;
+        padding-left: 3em;
+        padding-right: 5rem;
     }
 
 
@@ -1070,21 +1069,25 @@ h2.tittleNavFooter {
 
     /* ----- Hébergement les plus populaires ------ */
     #articlePopularHosting {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         order: -1;
         border-radius: 0;
         padding-right: 0;
-        padding-left: 0.1rem;
+        padding-left: 0;
+    }
+
+    div.tittlePopularHosting h2 {
+        margin-left: -5rem;
+        padding-right: 1rem;
     }
 
     article.popularHostingCards {
-        display: flex;
-        justify-content: center;
         max-width: 21rem;
         width: 100%;
+        margin-left: -0.5rem;
 
     }
 
@@ -1116,7 +1119,7 @@ h2.tittleNavFooter {
         background-color: white;
         margin-bottom: 50rem;
         padding-right: 0;
-        padding-left: 2.5rem;
+        padding-left: 1rem;
     }
 
     article.hostingCards {
@@ -1124,6 +1127,7 @@ h2.tittleNavFooter {
         padding: 0.375rem;
         width: 21rem;
         height: 13rem;
+        margin-left: 1rem;
     }
 
 
@@ -1156,7 +1160,7 @@ h2.tittleNavFooter {
         display: flex;
         flex-flow: column wrap;
         padding-right: 0;
-        padding-left: 2.5rem;
+        padding-left: 1rem;
 
     }
 
@@ -1182,6 +1186,7 @@ h2.tittleNavFooter {
         width: 21rem;
         max-height: 13rem;
         margin-bottom: 2rem;
+        margin-left: 1rem;
     }
 
     /* ----- footer ----- */
@@ -1223,14 +1228,40 @@ h2.tittleNavFooter {
 /* responsive transition smartphone 2 */
 /* ================================== */
 @media screen and (max-width: 375px) {
-
-    #articlePopularHosting{
-        padding-right: 1rem;
+    /* ----- Hébergement les plus populaires----- */
+    #articlePopularHosting {
+        width: 100%;
+        padding-right: 2rem;
+        margin-left: 0;
     }
-    .popularHostingCards {
-        margin-left: -0.5rem;
+
+    article.popularHostingCards {
+        margin-left: 1rem;
     }
 
+    /* ----- Hébergement classsique ----- */
+    #articleHosting {
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
+
+    article.hostingCards {
+        margin-left: 1rem;
+    }
+
+    /* ----- activités ----- */
+    #articleActivities {
+        display: flex;
+        flex-flow: column wrap;
+        padding-right: 0;
+        padding-left: 1.5rem;
+    }
+
+    article.activityCards {
+        margin-left: 0.5rem;
+    }
+
+    /* ----- Footer ----- */
     footer {
         padding-right: 3rem;
     }
