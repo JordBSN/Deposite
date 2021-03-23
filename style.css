@@ -1214,9 +1214,16 @@ h2.tittleNavFooter {
 @media screen and (max-width: 375px) {
   #articlePopularHosting{
       padding-right: 1rem;
-      padding-left: 0.5rem
+      margin-left: -1rem;
   }
 
+    #articleHosting{
+        margin-left: -1rem;
+    }
+
+    #articleActivities{
+        margin-left: -1rem;
+    }
     footer {
         padding-right: 3rem;
     }
