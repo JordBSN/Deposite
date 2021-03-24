@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     font-family: "Raleway", serif;
@@ -477,10 +477,11 @@ h2.tittleNavFooter {
     font-size: 0.8rem;
 }
 
-/* ================================== */
-/* responsive transition tablette */
-/* ================================== */
-@media all and (max-width: 1400px) and (min-width: 1279px) {
+/* ==================== */
+/* Responsive 1400px  */
+/* ==================== */
+@media screen and (max-width: 1400px) {
+
     main {
         margin-left: 1rem;
     }
@@ -503,32 +504,16 @@ h2.tittleNavFooter {
         margin-left: -1rem;
     }
 
-    /* ------ hébergements classique -------*/
-    #articleHosting {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-
-    }
-
-    div.tittleHosting {
-        flex-basis: 100%;
-    }
-
-    div.moreHosting {
-        flex-basis: 100%;
-    }
-
     /* -------  hébergements les plus populaires ------ */
     #articlePopularHosting {
-        width: 100%;
+        width: auto;
         height: auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         order: -1;
         margin-bottom: 2rem;
+        border-radius: 0;
 
     }
 
@@ -542,11 +527,6 @@ h2.tittleNavFooter {
 
     div.tittlePopularHosting {
         flex-basis: 100%;
-    }
-
-    div.tittlePopularHosting h2 {
-        font-size: 1.4em;
-        font-weight: bolder;
     }
 
     div.popularHostingImg img {
@@ -573,6 +553,24 @@ h2.tittleNavFooter {
     article.popularHostingCards .noteHosting {
         margin-left: -11rem;;
         margin-top: -1rem;
+    }
+
+    /* ------ hébergements classique -------*/
+    #articleHosting {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background: white;
+
+    }
+
+    div.tittleHosting {
+        flex-basis: 100%;
+    }
+
+    div.moreHosting {
+        flex-basis: 100%;
     }
 
     /* ------- Activités ------ */
@@ -620,27 +618,101 @@ h2.tittleNavFooter {
     }
 }
 
-/* ================================== */
-/* Responsive tablette */
-/* ================================== */
-@media all and (max-width: 1280px) and (min-width: 960px) {
+/* =================================== */
+/* Responsive 1235px IPAD pro 12" */
+/* =================================== */
+@media screen and (max-width: 1235px) {
+    .logo img {
+        margin-left: -6rem;
+    }
 
-    main {
+    nav.mainNav {
+        display: flex;
+        margin-left: 28em;
+    }
+
+    /* ----- Tous les  hébergements ------ */
+    section.allArticleHosting {
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /* ----- hébergements les plus populaires -----*/
+    #articlePopularHosting {
+        width: 95%;
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+
+    article.popularHostingCards {
+        margin-right: 3rem;
+    }
+
+    .tittlePopularHosting h2 {
+        margin-left: 2rem;
+    }
+
+    .moreHosting {
+        margin-left: 3rem;
+    }
+
+    /* ----- hébergements classique ------- */
+    #articleHosting {
+        width: 95%;
+        margin-left: -2.5rem;
+    }
+
+    .tittleHosting h2 {
+        margin-left: 3rem;
+    }
+
+    /* ----- Activités ----- */
+    #articleActivities {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: -3rem;
+    }
+
+    .activityCards {
+        margin-right: 1rem;
+    }
+
+    #articleActivities h2 {
+        margin-left: 4rem;
+    }
+}
+
+/* ==================== */
+/* Responsive 960px  */
+/* ==================== */
+@media screen and (max-width: 960px) {
+    .logo img {
         margin-left: 1rem;
     }
 
-    header {
-        display: flex;
-    }
-
-    .logo img {
-        margin-left: -4rem;
-    }
-
-    /* ------ Main menu ------ */
     nav.mainNav {
         display: flex;
-        margin-left: 25em;
+        margin-left: 10em;
+    }
+
+    section.filters {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 1rem;
+    }
+
+    section.filters h2 {
+        margin-bottom: -0.5rem;
+        margin-left: 1rem;
+    }
+
+    .allFilters {
+        display: flex;
+        flex-flow: column wrap;
     }
 
     /* ----- Tous les  hébergements ------ */
@@ -651,196 +723,16 @@ h2.tittleNavFooter {
         flex-flow: column wrap;
     }
 
-    /* ----- hébergements classique ------- */
-    #articleHosting {
-        background-color: white;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        height: auto;
-    }
-
-    .hostingCards {
-        margin-left: 0.5rem;
-    }
-
-    div.tittleHosting {
-        flex-basis: 100%;
-    }
-
-    div.moreHosting {
-        flex-basis: 100%;
-    }
-
     /* ----- hébergements les plus populaires -----*/
     #articlePopularHosting {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: row wrap;
-        order: -1;
-        border-radius: 0;
-        margin-bottom: 2rem;
-        margin-left: -1rem;
-
-    }
-
-    article.popularHostingCards {
-        padding: 0.375rem;
-        box-sizing: border-box;
-        width: 16rem;
-        height: 15rem;
-        margin-right: 1rem;
-        margin-left: 1.5rem;
-    }
-
-    div.tittlePopularHosting {
-        flex-basis: 100%;
-    }
-
-    div.tittlePopularHosting h2 {
-        font-size: 1.6rem;
-        font-weight: bolder;
-        margin-left: 2rem;
-    }
-
-    div.popularHostingImg img {
-        height: 7rem;
-        width: 15rem;
-        position: relative;
-        border-radius: 1rem 1rem 0 0;
-        margin-left: -2.4rem;
-        margin-top: -1rem;
-    }
-
-    figure.popularHosting figcaption h3 {
-        font-size: 1.1rem;
-        margin-left: -11rem;
-        margin-top: 0.2rem;
-    }
-
-    article.popularHostingCards p {
-        font-size: 1.1rem;
-        margin-left: -11rem;;
-        margin-top: 0.9rem;
-    }
-
-    article.popularHostingCards .noteHosting {
-        margin-left: -11rem;;
-        margin-top: -1rem;
-    }
-
-    /* ----- Activités ----- */
-    #articleActivities {
-        max-width: 960px;
-        width: 100%;
-        height: auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin-left: -0.5rem;
-
-    }
-
-    #articleActivities h2 {
-        flex-basis: 100%;;
-    }
-
-    img.smallActivityImg {
-        width: 16rem;
-        height: 12rem;
-
-    }
-
-    img.activityImg {
-        width: 16rem;
-        height: 12rem;
-    }
-
-    img.greatActivityImg {
-        width: 16rem;
-        height: 12rem;
-
-    }
-
-    article.activityCards {
-        max-width: 16rem;
-        width: 16rem;
-        max-height: 16rem;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
-    }
-}
-
-/* ================================== */
-/* responsive transition smartphone 1 */
-/* ================================== */
-@media all and (max-width: 960px) and (min-width: 604px) {
-    main {
-        margin-left: 1rem;
-    }
-
-    header {
-        display: flex;
-    }
-
-    .logo img {
-        margin-left: -7rem;
-    }
-
-    /* ------  Main menu ----- */
-    nav.mainNav {
-        display: flex;
-        margin-left: 3em;
-    }
-
-    /* ------ Tous les  hébergements ------ */
-    section.allArticleHosting {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-
-    .allFilters {
-        display: flex;
-        flex-flow: row wrap;
-        padding-right: 0;
-    }
-
-    /* ----- hébergements classique -----  */
-    #articleHosting {
-        background-color: white;
-        max-width: 605px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tittleHosting {
-        flex-basis: 100%;
-    }
-
-    div.moreHosting {
-        flex-basis: 100%;
-    }
-
-    /* ----- hébergements les plus populaires ----- */
-    #articlePopularHosting {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        max-width: 768px;
         width: 100%;
         height: auto;
         order: -1;
         border-radius: 0;
         margin-bottom: 2rem;
-        padding-right: 0;
-        margin-left: -1rem;
-
-
     }
 
     article.popularHostingCards {
@@ -856,7 +748,6 @@ h2.tittleNavFooter {
     }
 
     div.tittlePopularHosting h2 {
-        font-weight: bolder;
         margin-left: 6rem;
     }
 
@@ -886,73 +777,190 @@ h2.tittleNavFooter {
         margin-top: -1rem;
     }
 
-    /* ----- Activités ----- */
-    #articleActivities {
+    .moreHosting {
+        margin-left: 5rem;
+    }
+
+    /* ----- hébergements classique ------- */
+    #articleHosting {
+        background-color: white;
+        max-width: 768px;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        max-width: 1280px;
+        padding-right: 0;
+    }
+
+    .hostingCards {
+        margin-left: 0.5rem;
+    }
+
+    div.tittleHosting {
+        flex-basis: 100%;
+    }
+
+    div.moreHosting {
+        flex-basis: 100%;
+    }
+
+
+    /* ----- Activités ----- */
+    #articleActivities {
+        max-width: 960px;
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-left: -3rem;
 
     }
 
     #articleActivities h2 {
-        flex-basis: 100%;
-        margin-left: 5rem;
+        flex-basis: 100%;;
+        margin-left: 4rem;
     }
 
     img.smallActivityImg {
-        width: 15rem;
+        width: 16rem;
         height: 12rem;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-        margin-top: -1rem;
-        margin-left: -2.5rem;
+
     }
 
     img.activityImg {
-        width: 15rem;
+        width: 16rem;
         height: 12rem;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-        margin-top: -1rem;
-        margin-left: -2.5rem;
     }
 
     img.greatActivityImg {
-        width: 15rem;
+        width: 16rem;
         height: 12rem;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
-        margin-top: -1rem;
-        margin-left: -2.5rem;
+
     }
 
-    .activityCards {
-        margin-bottom: 2rem;
-        max-width: 15rem;
+    article.activityCards {
+        max-width: 16rem;
+        width: 16rem;
         max-height: 16rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
     }
 
-    /* ----- Footer ----- */
+    /* ----- footer ----- */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    nav.navFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     nav.about {
-        margin-left: 0.8rem;
+        margin-left: 1rem;
     }
 
     nav.ourHosting {
-        margin-left: 3rem;
+        margin-left: 4rem;
+        margin-top: -2rem;
     }
 
     nav.assist {
-        margin-left: 5rem;
+        margin-left: 4rem;
+        margin-top: -2rem;
     }
 
+    h2.tittleNavFooter {
+        font-size: 1.2rem;
+    }
+
+    .navFooter ul li {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+    }
 }
 
-/* ================================== */
-/*  Responsive smartphones */
-/* ================================== */
-@media screen and (max-width: 604px) {
+/* ====================================== */
+/* Responsive 864px - IPAD pro 11"  */
+/* ====================================== */
+@media screen and (max-width: 834px) {
+    .logo img {
+        margin-left: 1rem;
+        padding-right: 15rem;
+    }
+
+    /* ----- hébergements populaires ------- */
+    #articlePopularHosting {
+        margin-left: -1rem;
+        width: 95%;
+        padding-right: 1.6rem;
+    }
+
+    div.tittlePopularHosting h2 {
+        margin-left: 1rem;
+    }
+
+    /* ----- Activités ----- */
+    #articleActivities {
+        margin-left: -0.5rem;
+    }
+}
+
+/* =============================== */
+/* Responsive 864px - IPAD   */
+/* =============================== */
+@media screen and (max-width: 768px) {
+
+    .logo img {
+        margin-left: -7rem;
+        padding-right: 3rem;
+    }
+
+    /* ----- hébergements populaires ------- */
+    #articlePopularHosting {
+        width: 95%;
+        padding-right: 1.3rem;
+    }
+
+    /* ----- hébergements classique ------- */
+    #articleHosting {
+        width: 95%;
+        margin-right: 0;
+    }
+
+    /* ----- Activités ----- */
+    #articleActivities {
+        width: 95%;
+        margin-left: -0.5rem;
+    }
+
+    /* ----- footer ----- */
+    nav.ourHosting {
+        margin-left: 0;
+        margin-top: -2rem;
+    }
+
+    nav.assist {
+        margin-left: 2rem;
+        margin-top: -2rem;
+    }
+
+    h2.tittleNavFooter {
+        font-size: 1.2rem;
+    }
+}
+
+/* =================================== */
+/* Responsive 864px - Iphone X   */
+/* =================================== */
+
+@media screen and (max-width: 414px) {
+
     header {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -963,7 +971,7 @@ h2.tittleNavFooter {
 
     .logo img {
         margin-top: -1rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     #register {
@@ -976,11 +984,11 @@ h2.tittleNavFooter {
     nav.mainNav {
         max-width: 604px;
         width: 100%;
-        margin: 4rem 0 0 -6.5rem;
+        margin: 4rem 0 0 -13rem;
     }
 
     nav.mainNav a {
-        margin-right: -1rem;
+        margin-right:0;
         padding-bottom: 1rem;
         font-size: 1.2rem;
         font-weight: bolder;
@@ -992,16 +1000,15 @@ h2.tittleNavFooter {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px #0065FC solid;
-        margin-left: -2.2rem;
+        margin-left: 3rem;
         padding-left: 2rem;
-        padding-right: 4rem;
+        padding-right: 5.5rem;
     }
 
     nav.mainNav a[data-active=false] {
         padding-left: 3em;
-        padding-right: 5rem;
+        padding-right: 3rem;
     }
-
 
     /* ----- Research ----- */
     .research {
@@ -1030,107 +1037,87 @@ h2.tittleNavFooter {
     }
 
     /* ----- Filtres ------ */
-    section.filters {
-        display: flex;
-        flex-flow: column wrap;
-        margin-top: 1rem;
+    div.allFilters {
+        padding-right: 0;
     }
 
-    section.filters h2 {
-        margin-bottom: -0.5rem;
-        margin-left: 1rem;
+    .infoHosting{
+        width: 93%;
     }
-
-    .allFilters {
-        display: flex;
-        flex-flow: column wrap;
-    }
-
-
-    .searchResultWrapiconIcon {
-        display: flex;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-left: 0.2rem;
-        margin-right: 0.4rem;
-    }
-
-    div.infoHosting p {
-        width: 21rem;
-        font-size: 0.9rem;
-        overflow-wrap: break-word;
-    }
-
     /* ----- all hébergements ------ */
     section.allArticleHosting {
+        max-width: 414px;
+        height: auto;
         display: flex;
         flex-flow: column wrap;
     }
 
     /* ----- Hébergement les plus populaires ------ */
     #articlePopularHosting {
-        width: auto;
+        width: 92%;
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
         order: -1;
         border-radius: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 2.4rem;
+        padding-left: 2.8rem;
+        margin-bottom: 0;
     }
 
     div.tittlePopularHosting h2 {
-        margin-left: -5rem;
-        padding-right: 1rem;
+        margin-left: -2rem;
+        padding-right: 6rem;
     }
 
     article.popularHostingCards {
-        max-width: 21rem;
+        max-width: 25rem;
+        height:9rem;
         width: 100%;
-        margin-left: -0.5rem;
-
+        margin-left: -0.8rem;
     }
 
     figure.popularHosting figcaption h3 {
         font-size: 0.9rem;
+        margin-left: -1rem;
     }
 
     article.popularHostingCards p {
         font-size: 0.9rem;
         margin-bottom: 2rem;
+        margin-left: -1rem;
     }
-
+    article.popularHostingCards div.noteHosting {
+        margin-left: -1rem;
+    }
 
     div.popularHostingImg img {
         border-radius: 1rem 0 0 1rem;
         position: absolute;
         width: 9rem;
-        height: 8rem;
+        height: 8.5rem;
         object-fit: cover;
-        margin-top: -0.68rem;
-        margin-left: -2.1rem;
+        margin-top: -1.1rem;
+        margin-left: -2.6rem;
     }
-
     /* ------ Hébergement classique ------ */
     #articleHosting {
-        width: auto;
+        width: 92%;
         display: flex;
         flex-flow: row wrap;
         background-color: white;
-        margin-bottom: 50rem;
+        margin-bottom: 0;
+        margin-left: -1.5rem;
         padding-right: 0;
-        padding-left: 1rem;
+        padding-top: 1rem;
     }
 
     article.hostingCards {
         background-color: white;
         padding: 0.375rem;
-        width: 21rem;
+        width: 25rem;
         height: 13rem;
         margin-left: 1rem;
     }
-
-
     div.tittleHosting h2 {
         font-size: 1.4em;
         font-weight: bolder;
@@ -1147,43 +1134,46 @@ h2.tittleNavFooter {
     }
 
     div.hostingImg img {
-        height: 7rem;
-        width: 21rem;
+        height: 6.5rem;
+        width: 24rem;
         object-fit: cover;
         border-radius: 1rem 1rem 0 0;
-        margin-top: -1.35rem;
-        margin-left: -2.85rem;
+        margin-top: -1rem;
+        margin-left: -2.4rem;
+    }
+
+    .moreHosting {
+        margin-left: 1rem;
     }
 
     /* ----- activités ----- */
     #articleActivities {
+        width: 92%;
         display: flex;
         flex-flow: column wrap;
         padding-right: 0;
-        padding-left: 1rem;
-
+        margin-left: -1.3rem;
     }
 
     img.smallActivityImg {
-        width: 21rem;
+        width: 24rem;
         height: 9rem;
-
     }
 
     img.activityImg {
-        width: 21rem;
+        width: 24rem;
         height: 9rem;
     }
 
     img.greatActivityImg {
-        width: 21rem;
+        width: 24rem;
         height: 9rem;
 
     }
 
     article.activityCards {
-        max-width: 21rem;
-        width: 21rem;
+        max-width: 24rem;
+        width: 24rem;
         max-height: 13rem;
         margin-bottom: 2rem;
         margin-left: 1rem;
@@ -1200,22 +1190,27 @@ h2.tittleNavFooter {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
+        padding-right: 1.3rem;
     }
 
     nav.about {
         margin-left: 1rem;
+        margin-bottom: 3rem;
     }
 
     nav.ourHosting {
         margin-left: 1rem;
+        margin-bottom: 3rem;
     }
 
     nav.assist {
+        padding-bottom: 0;
         margin-left: 1rem;
     }
 
     h2.tittleNavFooter {
         font-size: 1.5rem;
+        margin-bottom: 0;
     }
 
     .navFooter ul li {
@@ -1223,50 +1218,68 @@ h2.tittleNavFooter {
         font-size: 1rem;
     }
 }
+/* ==================================== */
+/* Responsive 864px - Iphone 6/7/8 */
+/* ==================================== */
 
-/* ================================== */
-/* responsive transition smartphone 2 */
-/* ================================== */
 @media screen and (max-width: 375px) {
-    /* ----- Hébergement les plus populaires----- */
+
+    nav.mainNav a[data-active=false] {
+        padding-left: 2em;
+        padding-right: 1.6rem;
+    }
+
+    /* ----- Hébergement les plus populaires ------ */
     #articlePopularHosting {
-        width: 100%;
-        padding-right: 2rem;
-        margin-left: 0;
+        padding-right: 0.8rem;
     }
 
-    article.popularHostingCards {
-        margin-left: 1rem;
+    article.popularHostingCards{
+        margin-left: -1.3rem;
     }
 
-    /* ----- Hébergement classsique ----- */
+    /* ----- Hébergement classique ------ */
     #articleHosting {
-        padding-right: 0;
-        padding-left: 1.5rem;
+        margin-left: -1.5rem;
+    }
+    article.hostingCards {
+        background-color: white;
+        padding: 0.375rem;
+        width: 23rem;
+        height: 13rem;
+        margin-left: 1rem;
     }
 
-    article.hostingCards {
-        margin-left: 1rem;
+    div.hostingImg img {
+        width: 22rem;
+        margin-left: -2.4rem;
     }
 
     /* ----- activités ----- */
     #articleActivities {
-        display: flex;
-        flex-flow: column wrap;
-        padding-right: 0;
-        padding-left: 1.5rem;
+        margin-left: -1.3rem;
+    }
+
+    img.smallActivityImg {
+        width: 22rem;
+    }
+
+    img.activityImg {
+        width: 22rem;
+    }
+
+    img.greatActivityImg {
+        width: 22rem;
+
     }
 
     article.activityCards {
-        margin-left: 0.5rem;
+        max-width: 22rem;
+        width: 22rem;
     }
-
-    /* ----- Footer ----- */
+    /* ----- Footer ------ */
     footer {
-        padding-right: 3rem;
+        width: 100%;
+        padding-right: 2rem;
     }
 }
-
-
-
-
