@@ -642,7 +642,7 @@ h2.tittleNavFooter {
     /* ----- hébergements les plus populaires -----*/
     #articlePopularHosting {
         width: 95%;
-        padding-right: 2rem;
+        padding-right: 3.1rem;
         padding-left: 1rem;
     }
 
@@ -898,7 +898,7 @@ h2.tittleNavFooter {
     #articlePopularHosting {
         margin-left: -1rem;
         width: 95%;
-        padding-right: 1.6rem;
+        padding-right: 3.5rem;
     }
 
     div.tittlePopularHosting h2 {
