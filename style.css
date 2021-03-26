@@ -930,6 +930,7 @@ h2.tittleNavFooter {
     .tittlePopularHosting {
         margin-left: 3.5rem;
     }
+
     .popularHostingCards {
         margin-left: 3rem;
     }
@@ -1317,6 +1318,124 @@ h2.tittleNavFooter {
     /* ----- Footer ------ */
     footer {
         width: 100%;
-        padding-right: 0rem;
+        padding-right: 0;
+    }
+}
+
+/* ==================================== */
+/* Responsive 360px - Galaxy S9
+/* ==================================== */
+@media screen and (max-width: 360px) {
+    #register {
+        right: 9rem;
+    }
+
+    nav.mainNav a[data-active=false] {
+        padding-left: 2em;
+        padding-right: 1.7rem;
+    }
+
+    .title {
+        width: 95%;
+        margin-left: -0.5rem;
+    }
+
+    /* ------ Hébergement populaire ------ */
+    #articlePopularHosting {
+        padding-right: 2.25rem;
+    }
+    figure.popularHosting figcaption h3 {
+        width: 60%;
+        margin-bottom: -0.5rem;
+    }
+
+    /* ------ Hébergement classique ------ */
+    article.hostingCards {
+        width: 21rem;
+    }
+    div.hostingImg img {
+        width: 20rem;
+    }
+
+    .moreHosting {
+        margin-left: 1rem;
+    }
+
+    /* ----- activités ----- */
+    #articleActivities {
+        margin-left: -0.2rem;
+    }
+
+    img.smallActivityImg {
+        width: 21rem;
+    }
+
+    img.activityImg {
+        width: 21rem;
+    }
+
+    img.greatActivityImg {
+        width: 21rem;
+    }
+
+    article.activityCards {
+        max-width: 21rem;
+        width: 21rem;
+    }
+}
+
+/* ==================================== */
+/* Responsive 320px - Iphone 5
+/* ==================================== */
+@media screen and (max-width: 320px) {
+    #register {
+        right: 10rem;
+    }
+
+    nav.mainNav a[data-active=true] {
+        padding-right: 5.5rem;
+    }
+
+    nav.mainNav a[data-active=false] {
+        padding-left: 2em;
+        padding-right: 1.7rem;
+    }
+
+    .title h2 {
+        font-size: 1rem;
+        overflow-wrap: break-word
+    }
+
+    /* ------ Hébergement populaire ------ */
+    #articlePopularHosting {
+        width: 100%;
+    }
+
+    article.popularHostingCards {
+        width: 20rem;
+        margin-left: -0.2rem;
+    }
+
+    div.tittlePopularHosting h2 {
+        margin-left: -5rem;
+        font-size: 1.2rem;
+    }
+    /* ------ Hébergement classique ------ */
+    div.tittleHosting h2 {
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+    }
+
+    article.hostingCards {
+        margin-left: 6rem;
+    }
+    /* ------ Activitées ------ */
+    #articleActivities h2{
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    footer {
+        padding-right: 2.3rem;
     }
 }
