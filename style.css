@@ -1267,9 +1267,15 @@ h2.tittleNavFooter {
         margin-left: 0.5rem;
     }
 
+    div.tittlePopularHosting h2 {
+        margin-left: -4rem;
+        font-size: 1.3rem;
+    }
+
     /* ----- Hébergement classique ------ */
     div.tittleHosting h2 {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
+        font-size: 1.3rem;
     }
 
     article.hostingCards {
@@ -1295,6 +1301,7 @@ h2.tittleNavFooter {
     #articleActivities h2 {
         width: 92%;
         margin-left: 1.8rem;
+        font-size: 1.3rem;
     }
 
     img.smallActivityImg {
