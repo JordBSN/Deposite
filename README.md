@@ -9,6 +9,7 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 De : Loïc
 À : Vous
 CC : Sarah
@@ -30,6 +31,7 @@ La police du site est Raleway.
 Si tu as des questions n’hésite pas à m’écrire.
 Bonne journée!
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 De : Sarah
 À : Vous
 CC : Loïc
@@ -49,8 +51,9 @@ N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes
 À ta disposition pour en discuter !
 Sarah
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Compétences évaluées
+
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive
