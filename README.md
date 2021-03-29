@@ -1,7 +1,7 @@
 # jordanBastin_2_15022021
 Projet 2 de la formation développeur web chez Openclassrooms
 
-Scénario
+***Scénario***
 
 Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
@@ -52,7 +52,7 @@ N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes
 Sarah
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-Compétences évaluées
+***Compétences évaluées***
 
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - Intégrer du contenu conformément à une maquette
