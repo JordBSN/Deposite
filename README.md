@@ -1,5 +1,5 @@
 # jordanBastin_2_15022021
-Projet 2 de la formation développeur web chez Openclassrooms
+Projet 2 de la formation développeur web chez Openclassrooms - RESERVIA 
 
 **Scénario**
 
