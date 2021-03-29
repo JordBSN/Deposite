@@ -49,3 +49,9 @@ N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes
 À ta disposition pour en discuter !
 Sarah
 
+
+Compétences évaluées
+- Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+- Intégrer du contenu conformément à une maquette
+- Implémenter une interface responsive
+- Mettre en place son environnement Front-End
