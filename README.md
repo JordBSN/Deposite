@@ -9,7 +9,7 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-De : Loïc
+``` De : Loïc
 À : Vous
 CC : Sarah
 Objet : Intégration maquette Reservia
@@ -29,7 +29,7 @@ Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la cha
 La police du site est Raleway.
 Si tu as des questions n’hésite pas à m’écrire.
 Bonne journée!
-
+```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 De : Sarah
 À : Vous
